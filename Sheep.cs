@@ -124,7 +124,7 @@ public class Sheep : MonoBehaviour
     //This function is called from the Interactable object Script
     public void InteractWithObject(InteractableObject _object)
     {
-        ObjectType _objectType = _object.typeOfObject;
+        /*ObjectType _objectType = _object.typeOfObject;
         hoveredObject = _object;//For keeping track of hovering
 
         switch (_objectType)
@@ -152,7 +152,7 @@ public class Sheep : MonoBehaviour
 
         Destroy(_object.gameObject);
 
-        
+        */
 
         // Attempt to write better code
 

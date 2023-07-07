@@ -17,6 +17,7 @@ public class InteractableObject : MonoBehaviour
     private bool isDragged = false;
     [HideInInspector]public IOSpawner mySpawner; //Spawner which spawned this 
 
+
     private Sheep interactingSheep;
 
     private void Update()

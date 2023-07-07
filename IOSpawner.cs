@@ -11,6 +11,10 @@ public class IOSpawner : MonoBehaviour, IDragHandler
 
     bool shouldSpawn = true;
 
+
+    public Interactable interactableSO;
+    private InteractableObject createdObject;
+
     private void Update()
     {
         //When lifting the finger
@@ -48,5 +52,15 @@ public class IOSpawner : MonoBehaviour, IDragHandler
         newInput.z = 0;
 
         return newInput;
+    }
+
+    public void createObject()
+    {
+        GameObject newGameObject = new GameObject(interactableSO.name, typeof(InteractableObject), typeof(SpriteRenderer));
+
+        Collider2D collider =  newGameObject.AddComponent<BoxCollider2D>();
+        collider.isTrigger = true;
+
+        newGameObject.GetComponent<SpriteRenderer>().sprite = interactableSO.sprite;
     }
 }
