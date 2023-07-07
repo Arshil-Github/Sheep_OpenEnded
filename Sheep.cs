@@ -152,7 +152,7 @@ public class Sheep : MonoBehaviour
 
         Destroy(_object.gameObject);
 
-
+        
 
         // Attempt to write better code
 
